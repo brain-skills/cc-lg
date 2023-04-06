@@ -7,7 +7,6 @@
 <p><b>Lisensor profile url:</b> <span class="p-a-url">github.com/smart-skill</span></p>
 <p><b>Autor e-mail:</b> <span class="p-a-email">web.pr@mail.ru</span></p>
 <p><b>License year:</b> <span class="l-year">2023</span></p>
-<style>p{margin:0;}</style>
 <br>
 
 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode">Licenses legalcode</a><br>
