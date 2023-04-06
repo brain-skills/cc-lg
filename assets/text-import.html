@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Untitled</title>
+<meta charset="utf-8">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style type="text/css">
+
+</style>
+<script>
+$(function() {
+    $("form").on("input change", function() {
+        var data = $(this).serializeArray(), obj ={};
+        $.each(data, function(i, el) {
+            var cls = "."+el.name, val = el.value;
+            if(/\[\]/.test(cls)) {
+               cls = cls.slice(0,-2);
+               obj[cls] !== undefined ? obj[cls].push(val) : (obj[cls] = [val]);
+               val = obj[cls].join(",");
+            }
+            $(cls).html(val);
+        });
+    })
+});
+</script>
+</head>
+
+<body>
+<form action="" method="post">
+	<input type="text" name="name" placeholder="Ваше ФИО"><br><br>
+	<input type="text" name="phone" placeholder="Телефон"><br><br>
+	<select name="category">
+		<option selected disabled>Тип сайта</option>
+		<option>Визитка</option>
+		<option>Лендинг</option>
+	</select><br><br>
+	<input type="radio" name="tarif"  value="Тариф 1"> Тариф 1
+	<input type="radio" name="tarif"  value="Тариф 2"> Тариф 2<br><br>
+	<input type="checkbox" name="pack[]"  value="Пакет 1"> Пакет
+	<input type="checkbox" name="pack[]"  value="Пакет 2"> Пакет
+</form>
+
+<h2>Договор</h2>
+<p>Заказчик: <span class="name"></span></p>
+<p>Телефон: <span class="phone"></span></p>
+<p>Заказал: <span class="category"></span></p>
+<p>Тариф: <span class="tarif"></span></p>
+<p>Пакет: <span class="pack"></span></p>
+</body>
+</html>
