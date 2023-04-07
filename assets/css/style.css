@@ -152,6 +152,22 @@ a[data-toggle="collapse"] {
 
 .l-code {height: 280px !important; overflow-y: scroll; border: 1px solid #ddd;}
 .l-code p,.l-code h1{margin: 0;}
+.l-code h1:nth-child(1) {color: DeepSkyBlue !important;}
+.l-code p:nth-child(2) {color: Red !important;}
+.l-code p:nth-child(3) {color: Green !important;}
+.l-code p:nth-child(4) {color: MediumBlue !important;}
+.l-code p:nth-child(5) {color: DarkOrange !important;}
+.l-code p:nth-child(6) {color: Magenta !important;}
+.l-code p:nth-child(7) {color: Aqua !important;}
+.l-code p:nth-child(8) {color: Gold !important;}
+.values-form .form-group:nth-child(1) {border-left: 2px solid MediumBlue !important;}
+.values-form .form-group:nth-child(2) {border-left: 2px solid Magenta !important;}
+.values-form .form-group:nth-child(3) {border-left: 2px solid DarkOrange !important;}
+.values-form .form-group:nth-child(4) {border-left: 2px solid Aqua !important;}
+.values-form .form-group:nth-child(5) {border-left: 2px solid Gold !important;}
+.values-form .form-group:nth-child(6) {border-left: 2px solid DeepSkyBlue !important;}
+.values-form .form-group:nth-child(7) {border-left: 2px solid Red !important;}
+.values-form .form-group:nth-child(8) {border-left: 2px solid Green !important;}
 .l-s-code {height: 280px !important; overflow-y: scroll; border: 1px solid #ddd;}
 .cr-code {height: 45px !important; overflow-y: scroll; border: 1px solid #ddd;}
 .cr-s-code {height: 250px !important; overflow-y: scroll; border: 1px solid #ddd;}
